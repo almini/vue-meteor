@@ -113,7 +113,6 @@ var VueMeteor = {
                     Vue.util.defineReactive(this, key, null)
                     this.$trackMeteor(dataMeteor[key], (function(key) {
                         return function(result) {
-                            console.log('Set ' + key + ': ' + result)
                             this[key] = result
                         }
                     })(key))
